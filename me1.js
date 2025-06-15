@@ -77,7 +77,7 @@ function checkAnswer(currentlevel) {
     console.log("wrong!");
 
     if (level >= 5) {
-      var jumpscareAudio = new Audio("sounds/bulaga-main.mp3");
+      var jumpscareAudio = new Audio("/sounds/bulaga-main.mp3");
       jumpscareAudio.play();
 
       $("#bulaga").fadeIn(100);
@@ -86,7 +86,7 @@ function checkAnswer(currentlevel) {
         $("#bulaga").fadeOut(200);
       }, 5000);
     } else {
-      var audio = new Audio("sounds/wrong.mp3");
+      var audio = new Audio("/sounds/wrong.mp3");
       audio.play();
     }
 
