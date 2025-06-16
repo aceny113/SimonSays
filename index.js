@@ -5,17 +5,14 @@ var started = false;
 var isShowingSequence = false;
 var level = 0;
 
-function startGame() {
+$(document).on("click", function () {
   if (!started) {
     $("#level-title").text("level: " + level);
     nextSequence();
     started = true;
   }
-}
+});
 
-$(document).keypress(startGame);
-
-$(document).on("touchstart", startGame);
 
 
 $(".btn").click(function () {
