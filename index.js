@@ -5,13 +5,14 @@ var started = false;
 var isShowingSequence = false;
 var level = 0;
 
-$(document).on("click", function () {
+$(document).on("click keydown", function () {
   if (!started) {
     $("#level-title").text("level: " + level);
     nextSequence();
     started = true;
   }
 });
+
 
 
 
